@@ -10763,6 +10763,7 @@ html {
 body {
   height: 100%;
   font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
 }
 
 .wrapper {
