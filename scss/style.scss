@@ -2,6 +2,7 @@
 html{
     overflow-x: hidden;
     height: 100%;
+    margin-top:-5px;
 }
 body{
     height: 100%;
@@ -31,6 +32,7 @@ iframe{
     background-size: cover;
    
 }
+
 .header{
     max-height:1000px;
     background-color: rgba(0,0,0, 0.8);
@@ -1171,6 +1173,10 @@ iframe{
     }
     .row{
         margin-right: 0;
+        margin-left: 0;
+    }
+    .container{
+        padding-left: 0;
     }
     .contact{
         .col{
@@ -1245,6 +1251,9 @@ iframe{
     }
 }
 @media(max-width:991px){
+    html{
+        margin-top: 0;
+    }
     .contact{
         .row2{
             .col_1, .col_2, .col_3{

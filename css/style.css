@@ -10758,6 +10758,7 @@ col {
 html {
   overflow-x: hidden;
   height: 100%;
+  margin-top: -5px;
 }
 
 body {
@@ -11720,6 +11721,10 @@ iframe {
   }
   .row {
     margin-right: 0;
+    margin-left: 0;
+  }
+  .container {
+    padding-left: 0;
   }
   .contact .col p, .contact .col .lines, .contact .col h1, .contact .col .h1 {
     margin-left: 0;
@@ -11766,6 +11771,9 @@ iframe {
   }
 }
 @media (max-width: 991px) {
+  html {
+    margin-top: 0;
+  }
   .contact .row2 .col_1 i, .contact .row2 .col_2 i, .contact .row2 .col_3 i {
     margin: 0;
     margin-bottom: 27px;
