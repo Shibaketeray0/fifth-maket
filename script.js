@@ -1,3 +1,12 @@
+$(document).ready(function() {
+    $('.header__burger').click(function(event) {
+        $('.header__burger ,.nav').toggleClass('active');
+        $('.logo').toggleClass('logo_active');
+
+        $('body').toggleClass('lock');
+    });
+});
+
 $('.slider').slick({
     arrows:false,
     dots:true,
