@@ -1171,10 +1171,14 @@ iframe{
     .contact .row3 .form{
         padding-left: 0;
     }
-    .row{
-        margin-right: 0;
-        margin-left: 0;
+    .header, .features, .beautiful, .super_easy, .slider_bg, .like_what, .contact{
+        .container{
+              .row{
+            margin-right: 0;
     }
+        }
+      
+}
     .container{
         padding-left: 0;
         padding-right: 0;
@@ -1253,6 +1257,7 @@ iframe{
     }
 }
 @media(max-width:991px){
+    
     html{
         margin-top: 0;
     }
@@ -1272,7 +1277,7 @@ iframe{
         } 
     } 
     .pricings .row_cards .cardd{
-        max-width: 300px !important;
+        max-width: 260px !important;
         margin:0 auto;
     }
     .pricings {
@@ -1371,6 +1376,8 @@ iframe{
 }
 
 @media(max-width:767px){
+   
+    
     .contact .row3 form{
         padding:60px 10px 115px 10px;
         input{
@@ -1539,6 +1546,21 @@ iframe{
     
         display: block;
       }
+      .first, .second , .third, .fourth{
+        padding: 0;
+    }
+    .first, .third, {
+        padding-right: 10px;
+
+    }
+     .second , .fourth{
+        padding-left: 10px;
+
+
+
+    }
+
+
 }
 @media(max-width:619px){
     html{
@@ -1561,6 +1583,7 @@ iframe{
 
 }
 @media(max-width:576px){
+    
     
     .nav{
         top:-450%;
@@ -1624,10 +1647,15 @@ iframe{
 
 
     }
-
-    .row{
+    .header, .features, .beautiful, .super_easy, .slider_bg, .like_what, .contact{
+        .container{
+             .row{
         padding: 0 15px;
     }
+        }
+
+   
+}
     .features{
     .row{
         col-3{
@@ -1643,10 +1671,20 @@ iframe{
             }
         }
     }
+    .pricing{
+        .row{
+            padding: 0;
+            margin-right: none;
+        }
+    }
+  
 
 
 }
 @media(max-width:509px){
+    .first, .second , .third, .fourth{
+        padding: 0;
+    }
     .row_icons{
         display: flex;
         align-items: center;
@@ -1718,6 +1756,8 @@ iframe{
     } 
 }
 @media(max-width:370px){
+    
+    
     .row2 .col2 .buttons .button2{
         padding:16px 19px;
         margin-left: 0 !important;

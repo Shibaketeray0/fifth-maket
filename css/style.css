@@ -11719,9 +11719,8 @@ iframe {
   .contact .row3 .form {
     padding-left: 0;
   }
-  .row {
+  .header .container .row, .features .container .row, .beautiful .container .row, .super_easy .container .row, .slider_bg .container .row, .like_what .container .row, .contact .container .row {
     margin-right: 0;
-    margin-left: 0;
   }
   .container {
     padding-left: 0;
@@ -11783,7 +11782,7 @@ iframe {
     margin: 0;
   }
   .pricings .row_cards .cardd {
-    max-width: 300px !important;
+    max-width: 260px !important;
     margin: 0 auto;
   }
   .pricings .row_cards .card_n3, .pricings .row_cards .card_n4 {
@@ -11969,6 +11968,15 @@ iframe {
     text-align: center;
     display: block;
   }
+  .first, .second, .third, .fourth {
+    padding: 0;
+  }
+  .first, .third {
+    padding-right: 10px;
+  }
+  .second, .fourth {
+    padding-left: 10px;
+  }
 }
 @media (max-width: 619px) {
   html {
@@ -12032,7 +12040,7 @@ iframe {
     min-height: 150px;
     margin-top: 20px;
   }
-  .row {
+  .header .container .row, .features .container .row, .beautiful .container .row, .super_easy .container .row, .slider_bg .container .row, .like_what .container .row, .contact .container .row {
     padding: 0 15px;
   }
   .features .row col-3 {
@@ -12041,8 +12049,15 @@ iframe {
   .pricings .row_cards .card_n2 {
     margin-top: 60px !important;
   }
+  .pricing .row {
+    padding: 0;
+    margin-right: none;
+  }
 }
 @media (max-width: 509px) {
+  .first, .second, .third, .fourth {
+    padding: 0;
+  }
   .row_icons {
     display: flex;
     align-items: center;
