@@ -1650,6 +1650,9 @@ iframe{
 
 }
 @media(max-width:400px){
+    .row2 .col2{
+        margin-top:35px !important;
+    }
     .contact .row3 form textarea{
         margin: 0 auto;
         max-width: 200px;
