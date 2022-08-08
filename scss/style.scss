@@ -1282,11 +1282,15 @@ iframe{
     }
     .pricings {
         .row_cards{
-            .card_n3, .card_n4{
+           .card_n1, .card_n2, .card_n3, .card_n4{
                 margin-top: 60px;
             }
         }
     }
+    .pricings .row2{
+        margin-top:0;
+    }
+
     .pricings{
         .row_cards{
              .cardd{
@@ -1549,7 +1553,7 @@ iframe{
       .first, .second , .third, .fourth{
         padding: 0;
     }
-    .first, .third, {
+    .first, .third {
         padding-right: 10px;
 
     }
@@ -1583,6 +1587,7 @@ iframe{
 
 }
 @media(max-width:576px){
+   
     
     
     .nav{
@@ -1664,27 +1669,31 @@ iframe{
     }
    
 }
- .pricings {
-        .row_cards{
-            .card_n2{
-                margin-top: 60px !important;
-            }
-        }
-    }
+ 
     .pricing{
         .row{
             padding: 0;
             margin-right: none;
         }
     }
+    .first, .second , .third, .fourth{
+        padding: 0;
+    }
+    .pricings {
+        .row_cards{
+            .card_n2{
+                margin-top: 60px !important;
+            }
+        }
+    }
   
 
 
 }
+
+
 @media(max-width:509px){
-    .first, .second , .third, .fourth{
-        padding: 0;
-    }
+   
     .row_icons{
         display: flex;
         align-items: center;

@@ -11785,8 +11785,11 @@ iframe {
     max-width: 260px !important;
     margin: 0 auto;
   }
-  .pricings .row_cards .card_n3, .pricings .row_cards .card_n4 {
+  .pricings .row_cards .card_n1, .pricings .row_cards .card_n2, .pricings .row_cards .card_n3, .pricings .row_cards .card_n4 {
     margin-top: 60px;
+  }
+  .pricings .row2 {
+    margin-top: 0;
   }
   .pricings .row_cards .cardd .some_card_text {
     margin-left: 0;
@@ -12046,18 +12049,18 @@ iframe {
   .features .row col-3 {
     margin: 0;
   }
-  .pricings .row_cards .card_n2 {
-    margin-top: 60px !important;
-  }
   .pricing .row {
     padding: 0;
     margin-right: none;
   }
-}
-@media (max-width: 509px) {
   .first, .second, .third, .fourth {
     padding: 0;
   }
+  .pricings .row_cards .card_n2 {
+    margin-top: 60px !important;
+  }
+}
+@media (max-width: 509px) {
   .row_icons {
     display: flex;
     align-items: center;
