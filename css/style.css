@@ -10758,7 +10758,7 @@ col {
 html {
   overflow-x: hidden;
   height: 100%;
-  margin-right: -10px;
+  margin-right: -11px;
 }
 
 body {
@@ -10768,6 +10768,7 @@ body {
 }
 
 .wrapper {
+  overflow-x: hidden;
   display: flex;
   min-height: 100%;
   flex-direction: column;
