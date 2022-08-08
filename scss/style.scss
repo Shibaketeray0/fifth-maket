@@ -2,7 +2,6 @@
 html{
     overflow-x: hidden;
     height: 100%;
-    margin-right: -11px;
 }
 body{
     height: 100%;
@@ -21,7 +20,6 @@ body{
     flex-direction: column;
 }
 .content{
-    margin-bottom:-7px ;
     flex: 1 1 auto;
 }
 iframe{
@@ -81,7 +79,7 @@ iframe{
 
                  color:#fff;
                 text-decoration: none;
-                letter-spacing: 0.1px;
+                letter-spacing: 0.2px;
 
                 
             }
@@ -95,6 +93,9 @@ iframe{
             font-weight: 600;
             font-size:16px;
             margin-right:0;
+        }
+       
+        li:last-child{
         }
     
             li:after{
@@ -175,7 +176,7 @@ iframe{
 .row2{
     
         .col2{
-            margin-top: 85px;
+            margin-top: 83px;
 
            .introducing{
             letter-spacing: 1.1px;
@@ -183,12 +184,13 @@ iframe{
             font-weight: 700;
             font-size:15px ;
             color:#008ed6;
+            margin-bottom: 16px;
             } 
             h1{
                 font-size: 47px;
                 word-spacing: 3px;
-                letter-spacing: 0.9px;
-                line-height: 48px;
+                letter-spacing: 0.8px;
+                line-height: 49px;
                 color:#fff;
                 font-weight: 600;
 
@@ -1102,6 +1104,7 @@ iframe{
     }
 }
 .footer{
+    margin-top: -7px;
     background: #000;
     .col{
         .fa-behance{
@@ -1525,6 +1528,10 @@ iframe{
       }
 }
 @media(max-width:619px){
+    html{
+        
+        margin-right: -11px;
+    }
     .features{
           .row_icons{
               .first, .second , .third , .fourth{
