@@ -10758,6 +10758,7 @@ col {
 html {
   overflow-x: hidden;
   height: 100%;
+  margin-right: -10px;
 }
 
 body {
