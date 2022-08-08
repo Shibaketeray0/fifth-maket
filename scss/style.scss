@@ -1166,6 +1166,12 @@ iframe{
 }
 /*Медіа запроси*/
 @media(max-width:1200px){
+    .contact .row3 .form{
+        padding-left: 0;
+    }
+    .row{
+        margin-right: 0;
+    }
     .contact{
         .col{
             p, .lines , h1{
