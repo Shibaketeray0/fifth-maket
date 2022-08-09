@@ -11722,6 +11722,9 @@ iframe {
   .header .container .row, .features .container .row, .beautiful .container .row, .super_easy .container .row, .slider_bg .container .row, .like_what .container .row, .contact .container .row {
     margin-right: 0;
   }
+  .header .container .row {
+    margin-left: 0;
+  }
   .container {
     padding-left: 0;
     padding-right: 0;
