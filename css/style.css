@@ -10758,13 +10758,16 @@ col {
 html {
   overflow-x: hidden;
   height: 100%;
-  margin-top: -5px;
 }
 
 body {
   height: 100%;
   font-family: "Source Sans Pro", sans-serif;
   overflow-x: hidden;
+}
+
+body > * {
+  margin-top: -5px;
 }
 
 .wrapper {
