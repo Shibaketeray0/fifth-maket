@@ -11348,7 +11348,7 @@ iframe {
   border: 0.1px solid transparent;
 }
 .like_what .buttons .button2 {
-  padding: 14px 32px;
+  padding: 15px 32px;
 }
 .like_what .buttons button:hover {
   border: 0.1px solid #fff;
@@ -11719,6 +11719,12 @@ iframe {
 
 /*Медіа запроси*/
 @media (max-width: 1200px) {
+  .features .row_icons {
+    padding: 0 140px !important;
+  }
+  .beautiful {
+    margin-top: 206px;
+  }
   .contact .row3 .form {
     padding-left: 0;
   }
@@ -11728,55 +11734,54 @@ iframe {
   .header .container .row, .super_easy .container .row {
     margin-left: 0;
   }
-  .container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .contact .col p, .contact .col .lines, .contact .col h1, .contact .col .h1 {
+  .container .contact .col p, .container .contact .col .lines, .container .contact .col h1, .container .contact .col .h1 {
     margin-left: 0;
   }
-  .like_what .col {
+  .container .like_what .col {
     text-align: center;
   }
-  .like_what .buttons {
+  .container .like_what .buttons {
     float: none;
   }
-  .like_what .buttons button {
+  .container .like_what .buttons button {
     margin-left: 0 !important;
   }
-  .like_what .buttons .button1 {
+  .container .like_what .buttons .button1 {
     margin-left: 22px !important;
   }
-  .super_easy .col_beautiful {
+  .container .super_easy .col_beautiful {
     padding-top: 67px;
   }
-  .beautiful .row .col img {
+  .container .beautiful .row .col img {
     margin-left: 0;
     float: right;
   }
-  .slider .slide {
+  .container .slider .slide {
     padding-right: 13px;
     padding-left: 14px;
   }
-  .pricings .row_cards .cardd .some_card_text {
+  .container .pricings .row_cards .cardd .some_card_text {
     margin-left: 0;
     max-width: 200px;
     margin: 0 auto;
   }
-  .features {
+  .container .features {
     max-height: 1000px;
   }
-  .features .container {
+  .container .features .container {
     max-width: 700px;
   }
-  .features .row col-3 {
+  .container .features .row col-3 {
     margin: 0;
   }
-  .features .container .row_icons {
+  .container .features .container .row_icons {
     padding: 0;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1200px) and (max-width: 991px) {
+  .features .row_icons {
+    padding: 0 !important;
+  }
   html {
     margin-top: 0;
   }
@@ -11814,9 +11819,12 @@ iframe {
   .row2 .col2 h1, .row2 .col2 .h1 {
     font-size: 40px;
   }
-  .row2 .col2 .buttons button {
-    padding: 16px 13px;
+  .row2 .col2 span {
     margin-top: 15px;
+  }
+  .row2 .col2 .buttons button {
+    padding: 16px 8px;
+    margin-top: 1px;
   }
   .row2 .col2 .buttons .button2 {
     padding: 16px 14px;
@@ -11850,6 +11858,18 @@ iframe {
   }
 }
 @media (max-width: 767px) {
+  .like_what .buttons button {
+    margin-left: 0;
+  }
+  .like_what .buttons .button1 {
+    margin-left: 10px;
+  }
+  .row2 .col2 .buttons button {
+    padding: 16px 16px;
+  }
+  .header .container {
+    padding-left: 0;
+  }
   .contact .row3 form {
     padding: 60px 10px 115px 10px;
   }
@@ -11867,7 +11887,7 @@ iframe {
     padding: 0 !important;
   }
   .beautiful {
-    margin-top: 120px !important;
+    margin-top: 200px !important;
   }
   .beautiful .row .col {
     display: none;
@@ -11902,9 +11922,6 @@ iframe {
   }
   .col3 {
     display: none;
-  }
-  .features .row_icons .first, .features .row_icons .second, .features .row_icons .third, .features .row_icons .fourth {
-    margin: 0 15px;
   }
   .middle_line {
     position: absolute;
@@ -11988,9 +12005,6 @@ iframe {
   }
 }
 @media (max-width: 619px) {
-  html {
-    margin-right: -11px;
-  }
   .features .row_icons .first, .features .row_icons .second, .features .row_icons .third, .features .row_icons .fourth {
     margin: 0 auto;
   }
@@ -12000,6 +12014,12 @@ iframe {
   }
 }
 @media (max-width: 576px) {
+  .contact .container .row {
+    margin-right: 0;
+  }
+  html {
+    margin-right: -11px;
+  }
   .nav {
     top: -450%;
   }
@@ -12066,7 +12086,10 @@ iframe {
     margin-top: 60px !important;
   }
 }
-@media (max-width: 509px) {
+@media (max-width: 510px) {
+  .features {
+    max-height: 1370px;
+  }
   .row_icons {
     display: flex;
     align-items: center;
@@ -12087,9 +12110,6 @@ iframe {
     margin: 0 auto;
     max-width: 250px;
     min-width: 250px;
-  }
-  .features {
-    max-height: 1370px;
   }
 }
 @media (max-width: 400px) {
@@ -12115,7 +12135,7 @@ iframe {
     padding: 14px 16px;
   }
   .like_what .buttons .button1 {
-    margin-left: auto !important;
+    margin-left: 24px !important;
     padding: 14px 10px;
   }
   .contact .row2 .col_1 p, .contact .row2 .col_2 p, .contact .row2 .col_3 p {
@@ -12124,7 +12144,7 @@ iframe {
 }
 @media (max-width: 370px) {
   .row2 .col2 .buttons .button2 {
-    padding: 16px 19px;
+    padding: 16px 14.5px;
     margin-left: 0 !important;
   }
   .row2 .col2 h1, .row2 .col2 .h1 {
