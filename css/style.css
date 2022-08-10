@@ -10962,7 +10962,7 @@ iframe {
   padding: 14px 32px;
 }
 .row2 .col2 .buttons button:hover {
-  border: 0.01px solid #fff;
+  border: 0.1px solid #fff;
   background: transparent;
 }
 .row2 .col3 {
