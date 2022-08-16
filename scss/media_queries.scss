@@ -260,6 +260,12 @@
   }
 }
 @media (max-width: 767px) {
+  .slider_tint{
+    .slick-dots{
+    padding-right: 40px;
+  }
+  }
+  
   .like_what .buttons {
     button {
       margin-left: 0;

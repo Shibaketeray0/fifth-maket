@@ -15,6 +15,7 @@
     "gulp-sass": "^5.1.0",
     "main-bower-files": "^2.13.3",
     "sas": "^3.0.4",
-    "sass": "^1.54.0"
+    "sass": "^1.54.0",
+    "slick-carousel": "^1.8.1"
   }
 }

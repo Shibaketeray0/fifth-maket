@@ -11177,9 +11177,8 @@ col {
 /*slider*/
 .slider_tint {
   background-color: rgba(0, 0, 0, 0.8);
-  padding-bottom: 31px;
+  padding-bottom: 56px;
 }
-
 .slider_bg {
   z-index: 1;
   width: 100%;
@@ -11285,15 +11284,18 @@ col {
   padding-left: 12px;
 }
 
-.slick-dots {
+.slider .slick-dots {
   margin-bottom: 30px;
 }
-.slick-dots li button::before {
+.slider .slick-dots li button::before {
   margin-left: 4px;
   border: 0.5px solid #fff;
   background: transparent;
   border-radius: 50%;
   font-size: 10px;
+  content: " ";
+  background: #999999;
+  margin-top: 30px;
 }
 
 /*block with title like what you see and 2 buttons*/
@@ -11902,6 +11904,9 @@ col {
   }
 }
 @media (max-width: 767px) {
+  .slider_tint .slick-dots {
+    padding-right: 40px;
+  }
   .like_what .buttons button {
     margin-left: 0;
   }
