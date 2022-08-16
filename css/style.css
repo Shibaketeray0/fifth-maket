@@ -10763,7 +10763,6 @@ html {
 body {
   height: 100%;
   font-family: "Source Sans Pro", sans-serif;
-  overflow-x: hidden;
 }
 
 body > * {
@@ -10775,6 +10774,10 @@ body > * {
   display: flex;
   min-height: 100%;
   flex-direction: column;
+}
+
+.col {
+  padding: 0;
 }
 
 .content {
@@ -10812,10 +10815,7 @@ iframe {
   z-index: 99;
 }
 
-.col {
-  padding: 0;
-}
-
+/*header navigation*/
 .col1 {
   display: flex;
   justify-content: space-between;
@@ -10849,7 +10849,7 @@ iframe {
   letter-spacing: 0.2px;
 }
 .col1 .nav__ul li a:before:hover {
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid #008ed6;
 }
 .col1 .nav__ul li:after {
   display: none;
@@ -10862,14 +10862,6 @@ iframe {
 }
 .col1 .nav__ul li:hover:after {
   display: block;
-}
-.col1 .nav span:after {
-  content: "";
-  display: inline-block;
-  width: 21px;
-  height: 2px;
-  background: #fff;
-  margin: 0 auto;
 }
 
 .logo.logo_active {
@@ -10913,6 +10905,7 @@ iframe {
   display: inline-block;
 }
 
+/*block under header navigation*/
 .row2 .col2 {
   margin-top: 83px;
 }
@@ -10944,9 +10937,9 @@ iframe {
   letter-spacing: 0.2px;
 }
 .row2 .col2 .buttons button {
-  border: 0.01px solid transparent;
+  border: 0.01px solid #fff;
   transition: all 0.3s ease 0s;
-  background-color: #008ed6;
+  background-color: transparent;
   outline: none;
   border-radius: 3px;
   text-transform: uppercase;
@@ -10962,8 +10955,8 @@ iframe {
   padding: 14px 32px;
 }
 .row2 .col2 .buttons button:hover {
-  border: 0.1px solid #fff;
-  background: transparent;
+  border: 0.1px solid transparent;
+  background: #008ed6;
 }
 .row2 .col3 {
   height: 581px;
@@ -10980,25 +10973,23 @@ iframe {
   background-color: rgb(255, 255, 255);
 }
 .features .container .row_icons {
-  padding-left: 20px;
+  padding-left: 18px;
   padding-right: 13px;
 }
-.features i {
+.features .img_circle {
   color: #008ed6;
-  padding: 29px;
-  width: 90px;
-  height: 90px;
+  padding: 20px 29px 28px 29px;
   border: 1px solid gray;
   border-radius: 50%;
   font-size: 30px;
 }
-.features .fa-display {
-  padding: 29px 29px 29px 27px;
+.features .fourth .img_circle {
+  padding: 20px 33.5px 28px 31.5px;
 }
-.features .fa-mobile-button {
-  padding: 29px 29px 29px 33px;
-}
-.features .first, .features .second, .features .third, .features .fourth {
+.features .first,
+.features .second,
+.features .third,
+.features .fourth {
   max-width: 240px;
   padding: 0;
   display: flex;
@@ -11007,12 +10998,21 @@ iframe {
   justify-content: center;
   text-align: center;
 }
-.features .first h3, .features .first .h3, .features .second h3, .features .second .h3, .features .third h3, .features .third .h3, .features .fourth h3, .features .fourth .h3 {
-  margin-top: 30px;
+.features .first h3, .features .first .h3,
+.features .second h3,
+.features .second .h3,
+.features .third h3,
+.features .third .h3,
+.features .fourth h3,
+.features .fourth .h3 {
+  margin-top: 28px;
   font-size: 24px;
   letter-spacing: 0.5px;
 }
-.features .first p, .features .second p, .features .third p, .features .fourth p {
+.features .first p,
+.features .second p,
+.features .third p,
+.features .fourth p {
   color: #b4b4b4;
   letter-spacing: 0.1px;
   margin-top: 6px;
@@ -11021,7 +11021,7 @@ iframe {
   line-height: 26px;
 }
 .features .row_icons {
-  margin-top: 69px;
+  margin-top: 66px;
 }
 .features .row_icons .w-100 {
   display: none;
@@ -11070,7 +11070,7 @@ iframe {
 .beautiful {
   margin-top: 126px;
 }
-.beautiful .row .col img {
+.beautiful .row .col .phones {
   margin-left: 53px;
 }
 .beautiful .row .col_beautiful {
@@ -11113,8 +11113,17 @@ iframe {
   max-width: 500px;
 }
 .beautiful .row .col_beautiful ul {
-  margin-top: 33px;
+  margin-top: 31px;
   padding: 0;
+}
+.beautiful .row .col_beautiful ul .mouse_li img {
+  margin-right: 11px;
+}
+.beautiful .row .col_beautiful ul .energy_li {
+  margin-top: 8px;
+}
+.beautiful .row .col_beautiful ul .energy_li img {
+  margin-right: 9px;
 }
 .beautiful .row .col_beautiful ul li {
   color: #1b1b1b;
@@ -11128,17 +11137,23 @@ iframe {
   line-height: 30px;
   list-style-type: none;
 }
+.beautiful .row .col_beautiful ul li img {
+  margin-right: 4px;
+}
 .beautiful .row .col_beautiful ul li i {
   color: #008ed6;
   width: 12px;
   height: 16px;
   margin-right: 11px;
 }
-.beautiful .row .col_beautiful ul li .fa-computer-mouse, .beautiful .row .col_beautiful ul li .fa-bolt, .beautiful .row .col_beautiful ul li .fa-gauge-high {
+.beautiful .row .col_beautiful ul li .fa-computer-mouse,
+.beautiful .row .col_beautiful ul li .fa-bolt,
+.beautiful .row .col_beautiful ul li .fa-gauge-high {
   margin-left: 3px;
   margin-right: 8px;
 }
 
+/*block above slider*/
 .super_easy {
   margin-top: 75px;
   width: 100%;
@@ -11187,6 +11202,7 @@ iframe {
   margin-bottom: 56px;
 }
 
+/*затемнення для фону слайдера*/
 .slider_tint {
   background-color: rgba(0, 0, 0, 0.8);
   padding-bottom: 31px;
@@ -11308,9 +11324,10 @@ iframe {
   font-size: 10px;
 }
 
+/*block under slider*/
 .like_what {
   padding: 56px 0 60px 0;
-  background: #15141a;
+  background: #16151b;
 }
 .like_what .thin {
   color: #fff;
@@ -11335,7 +11352,7 @@ iframe {
   margin-top: 5px;
   margin-left: 22px;
   transition: all 0.3s ease 0s;
-  background-color: #008ed6;
+  background-color: transparent;
   outline: none;
   border: none;
   border-radius: 3px;
@@ -11345,15 +11362,16 @@ iframe {
   font-weight: 700;
   color: #fff;
   letter-spacing: 0.2px;
-  border: 0.1px solid transparent;
+  border: 0.1px solid #fff;
 }
 .like_what .buttons .button2 {
   padding: 15px 32px;
 }
 .like_what .buttons button:hover {
-  border: 0.1px solid #fff;
-  background: transparent;
+  border: 0.1px solid transparent;
+  background: #008ed6;
 }
+
 .pricings {
   padding-top: 58px;
   text-align: center;
@@ -11391,9 +11409,17 @@ iframe {
   height: 2px;
   background: #008ed6;
 }
-.pricings .row_cards .cardd:hover price {
+.pricings .row_cards {
+  /*карточка товару*/
+  /*деякі кастомні параметри для карточок */
+}
+.pricings .row_cards .cardd:hover .price {
   background-color: #008ed6;
   transition: all 0.3s ease 0s;
+}
+.pricings .row_cards .cardd:hover .price h3, .pricings .row_cards .cardd:hover .price .h3,
+.pricings .row_cards .cardd:hover .price p {
+  color: #fff;
 }
 .pricings .row_cards .cardd:hover button {
   background-color: #008ed6;
@@ -11443,11 +11469,17 @@ iframe {
   font-size: 19px;
   letter-spacing: 0.01px;
   word-spacing: 0.01px;
-  color: #000;
+  color: #a0a0a0;
   padding: 46px 0 0 0;
   max-width: 210px;
   line-height: 27px;
   margin-left: 34px;
+}
+.pricings .row_cards .cardd .some_card_text span {
+  color: #008ed6;
+}
+.pricings .row_cards .cardd .some_card_text span:after {
+  display: none;
 }
 .pricings .row_cards .cardd .price {
   transition: all 0.3s ease 0s;
@@ -11519,10 +11551,12 @@ iframe {
   z-index: 2;
   background: #ededed;
   padding-top: 58px;
+  /*contact form*/
   text-align: center;
 }
 .contact .row2 {
-  margin-top: 56px;
+  margin-top: 51px;
+  /*загальні параметри для колонок з контактами*/
 }
 .contact .row2 .col {
   text-align: center;
@@ -11536,7 +11570,7 @@ iframe {
   letter-spacing: 0.1px;
   word-spacing: 0.1px;
 }
-.contact .row2 .col i {
+.contact .row2 .col img {
   color: #008ed6;
   margin-bottom: 27px;
   font-size: 30px;
@@ -11544,19 +11578,21 @@ iframe {
 .contact .row2 .col_1 p {
   margin-right: 27px;
 }
-.contact .row2 .col_1 i {
-  margin-right: 18px;
+.contact .row2 .col_1 img {
+  margin-right: 20px;
 }
 .contact .row2 .col_2 p {
   margin-left: 33px;
 }
-.contact .row2 .col_2 i {
+.contact .row2 .col_2 img {
   margin-left: 6px;
 }
 .contact .row2 .col_3 p {
-  margin-left: 56px;
+  margin-left: 53px;
+  margin-top: 3px;
 }
-.contact .row2 .col_3 i {
+.contact .row2 .col_3 img {
+  margin-top: 7px;
   margin-left: 28.5px;
 }
 .contact .row3 .form {
@@ -11565,10 +11601,9 @@ iframe {
   padding-left: 5px;
 }
 .contact .row3 form {
-  border-radius: 5px;
   position: relative;
   z-index: 2;
-  background: #000;
+  background: #16151b;
   padding: 60px 81px 115px 63px;
   margin: 0 auto;
   max-width: 794px;
@@ -11585,18 +11620,18 @@ iframe {
 .contact .row3 form input {
   color: gray;
   padding: 13px 18px;
-  background: #000;
+  background: #16151b;
   min-width: 310px;
   outline: none;
   border-radius: 4px;
-  border: 0.1px solid #fff;
+  border: 0.1px solid #46454b;
 }
 .contact .row3 form textarea {
   color: gray;
   padding: 14px 18px;
-  background: #000;
+  background: #16151b;
   border-radius: 4px;
-  border: 0.1px solid #fff;
+  border: 0.1px solid #46454b;
   min-width: 310px;
   outline: none;
   resize: none;
@@ -11609,13 +11644,14 @@ iframe {
   font-size: 15px;
   font-weight: 600;
 }
-.contact .row3 form #email, .contact .row3 form #subject {
+.contact .row3 form #email,
+.contact .row3 form #subject {
   margin-top: 20px;
 }
 .contact .row3 form button {
   float: right;
   transition: all 0.3s ease 0s;
-  background-color: #008ed6;
+  background-color: transparent;
   outline: none;
   border: none;
   border-radius: 3px;
@@ -11625,16 +11661,15 @@ iframe {
   font-weight: 700;
   color: #fff;
   letter-spacing: 0.2px;
-  border: 0.1px solid lightgray;
+  border: 0.1px solid #46454b;
   display: block;
   margin-top: 23px;
   margin-right: 5px;
   border-radius: 5px;
 }
 .contact .row3 form button:hover {
-  border: 0.1px solid #fff;
-  background: transparent;
-  color: #fff;
+  border: 0.1px solid transparent;
+  background: #008ed6;
 }
 .contact p {
   color: #008ed6;
@@ -11668,9 +11703,9 @@ iframe {
 }
 
 .footer {
-  margin-top: -7px;
-  background: #000;
   text-align: center;
+  margin-top: -7px;
+  background: #16151b;
 }
 .footer .col {
   padding: 51px 0 32px 0;
@@ -11705,10 +11740,10 @@ iframe {
 .footer .col i {
   font-size: 19px;
   margin-top: 4px;
-  color: #999999;
+  color: gray;
 }
 .footer p {
-  color: #999999;
+  color: gray;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.1px;
@@ -11719,8 +11754,8 @@ iframe {
 
 /*Медіа запроси*/
 @media (max-width: 1200px) {
-  .features .row_icons {
-    padding: 0 140px !important;
+  .features .container .row_icons {
+    padding: 0 140px;
   }
   .beautiful {
     margin-top: 206px;
@@ -11728,13 +11763,23 @@ iframe {
   .contact .row3 .form {
     padding-left: 0;
   }
-  .header .container .row, .features .container .row, .beautiful .container .row, .super_easy .container .row, .slider_bg .container .row, .like_what .container .row, .contact .container .row {
+  .header .container .row,
+.features .container .row,
+.beautiful .container .row,
+.super_easy .container .row,
+.slider_bg .container .row,
+.like_what .container .row,
+.contact .container .row {
     margin-right: 0;
   }
-  .header .container .row, .super_easy .container .row {
+  .header .container .row,
+.super_easy .container .row {
     margin-left: 0;
   }
-  .container .contact .col p, .container .contact .col .lines, .container .contact .col h1, .container .contact .col .h1 {
+  .container .contact .col p,
+.container .contact .col .lines,
+.container .contact .col h1,
+.container .contact .col .h1 {
     margin-left: 0;
   }
   .container .like_what .col {
@@ -11744,10 +11789,10 @@ iframe {
     float: none;
   }
   .container .like_what .buttons button {
-    margin-left: 0 !important;
+    margin-left: 0;
   }
   .container .like_what .buttons .button1 {
-    margin-left: 22px !important;
+    margin-left: 22px;
   }
   .container .super_easy .col_beautiful {
     padding-top: 67px;
@@ -11759,11 +11804,6 @@ iframe {
   .container .slider .slide {
     padding-right: 13px;
     padding-left: 14px;
-  }
-  .container .pricings .row_cards .cardd .some_card_text {
-    margin-left: 0;
-    max-width: 200px;
-    margin: 0 auto;
   }
   .container .features {
     max-height: 1000px;
@@ -11777,29 +11817,54 @@ iframe {
   .container .features .container .row_icons {
     padding: 0;
   }
+  .pricings .row_cards .cardd .some_card_text {
+    margin-left: 0;
+    max-width: 200px;
+    margin: 0 auto;
+  }
 }
-@media (max-width: 1200px) and (max-width: 991px) {
+@media (max-width: 991px) {
+  .contact .row1 .col p,
+.contact .row1 .col h1,
+.contact .row1 .col .h1,
+.contact .row1 .col .lines {
+    margin-left: 0;
+  }
+  .contact .row2 .col img {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .beautiful .row .col img {
+    margin-left: 0;
+  }
   .beautiful .row .col_beautiful {
     padding: 0 0 0 35px;
   }
-  .features .row_icons {
-    padding: 0 !important;
+  .features .container .row_icons {
+    padding: 0;
   }
   html {
     margin-top: 0;
   }
-  .contact .row2 .col_1 i, .contact .row2 .col_2 i, .contact .row2 .col_3 i {
+  .contact .row2 .col_1 i,
+.contact .row2 .col_2 i,
+.contact .row2 .col_3 i {
     margin: 0;
     margin-bottom: 27px;
   }
-  .contact .row2 .col_1 p, .contact .row2 .col_2 p, .contact .row2 .col_3 p {
+  .contact .row2 .col_1 p,
+.contact .row2 .col_2 p,
+.contact .row2 .col_3 p {
     margin: 0;
   }
   .pricings .row_cards .cardd {
-    max-width: 260px !important;
+    max-width: 260px;
     margin: 0 auto;
   }
-  .pricings .row_cards .card_n1, .pricings .row_cards .card_n2, .pricings .row_cards .card_n3, .pricings .row_cards .card_n4 {
+  .pricings .row_cards .card_n1,
+.pricings .row_cards .card_n2,
+.pricings .row_cards .card_n3,
+.pricings .row_cards .card_n4 {
     margin-top: 60px;
   }
   .pricings .row2 {
@@ -11807,7 +11872,7 @@ iframe {
   }
   .pricings .row_cards .cardd .some_card_text {
     margin-left: 0;
-    max-width: 100% !important;
+    max-width: 100%;
     margin: 0 auto;
   }
   .super_easy .col_beautiful {
@@ -11886,11 +11951,11 @@ iframe {
   .beautiful .row .col_beautiful .dummy_text {
     margin: 0 auto;
   }
-  .beautiful .row .col_beautiful {
-    padding: 0 !important;
+  .beautiful .container .row .col_beautiful {
+    padding: 0;
   }
   .beautiful {
-    margin-top: 200px !important;
+    margin-top: 200px;
   }
   .beautiful .row .col {
     display: none;
@@ -11904,7 +11969,7 @@ iframe {
   }
   .row2 .col2 .buttons .button2 {
     padding: 16px 19px;
-    margin-left: 20px !important;
+    margin-left: 20px;
   }
   .slider .slide {
     margin-bottom: 50px;
@@ -11934,7 +11999,8 @@ iframe {
     height: 1px;
     top: 15px;
   }
-  .header__burger:before, .header__burger:after {
+  .header__burger:before,
+.header__burger:after {
     content: "";
     position: absolute;
     background-color: #000;
@@ -11992,31 +12058,49 @@ iframe {
     background: white;
     color: #000;
   }
+  .col1 .nav__ul li {
+    margin-left: 21px;
+  }
+  .col1 .nav__ul li:first-child {
+    margin-left: 0;
+    margin-top: 3px;
+  }
   .nav__ul {
     margin: 20px auto;
     text-align: center;
     display: block;
   }
-  .first, .second, .third, .fourth {
+  .first,
+.second,
+.third,
+.fourth {
     padding: 0;
   }
-  .first, .third {
+  .first,
+.third {
     padding-right: 10px;
   }
-  .second, .fourth {
+  .second,
+.fourth {
     padding-left: 10px;
   }
 }
 @media (max-width: 619px) {
-  .features .row_icons .first, .features .row_icons .second, .features .row_icons .third, .features .row_icons .fourth {
+  .features .row_icons .first,
+.features .row_icons .second,
+.features .row_icons .third,
+.features .row_icons .fourth {
     margin: 0 auto;
   }
-  .features .row_icons .first p, .features .row_icons .second p, .features .row_icons .third p, .features .row_icons .fourth p {
+  .features .row_icons .first p,
+.features .row_icons .second p,
+.features .row_icons .third p,
+.features .row_icons .fourth p {
     margin-left: 15px;
     margin-right: 15px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   .contact .container .row {
     margin-right: 0;
   }
@@ -12027,7 +12111,7 @@ iframe {
     top: -450%;
   }
   .nav.active {
-    background: #767676;
+    background: #16151b;
     top: 0;
   }
   .nav.active li:hover:after {
@@ -12043,7 +12127,7 @@ iframe {
     flex-direction: column;
   }
   .col1 .nav__ul li {
-    margin-left: 0 !important;
+    margin-left: 0;
     margin-top: 20px;
     font-size: 18px;
   }
@@ -12072,21 +12156,33 @@ iframe {
     min-height: 150px;
     margin-top: 20px;
   }
-  .header .container .row, .features .container .row, .beautiful .container .row, .super_easy .container .row, .slider_bg .container .row, .like_what .container .row, .contact .container .row {
+  .header .container .row,
+.features .container .row,
+.beautiful .container .row,
+.super_easy .container .row,
+.slider_bg .container .row,
+.like_what .container .row,
+.contact .container .row {
     padding: 0 15px;
   }
-  .features .row col-3 {
+  .features .row .col-3 {
     margin: 0;
   }
   .pricing .row {
     padding: 0;
     margin-right: none;
   }
-  .first, .second, .third, .fourth {
+  .first,
+.second,
+.third,
+.fourth {
     padding: 0;
   }
   .pricings .row_cards .card_n2 {
-    margin-top: 60px !important;
+    margin-top: 60px;
+  }
+  .pricings .container {
+    padding-left: 0;
   }
 }
 @media (max-width: 510px) {
@@ -12097,7 +12193,10 @@ iframe {
     display: flex;
     align-items: center;
   }
-  .row_icons .first, .row_icons .second, .row_icons .third, .row_icons .fourth {
+  .row_icons .first,
+.row_icons .second,
+.row_icons .third,
+.row_icons .fourth {
     margin: 0 auto;
   }
 }
@@ -12117,7 +12216,7 @@ iframe {
 }
 @media (max-width: 400px) {
   .row2 .col2 {
-    margin-top: 35px !important;
+    margin-top: 35px;
   }
   .contact .row3 form textarea {
     margin: 0 auto;
@@ -12138,17 +12237,19 @@ iframe {
     padding: 14px 16px;
   }
   .like_what .buttons .button1 {
-    margin-left: 24px !important;
+    margin-left: 24px;
     padding: 14px 10px;
   }
-  .contact .row2 .col_1 p, .contact .row2 .col_2 p, .contact .row2 .col_3 p {
+  .contact .row2 .col_1 p,
+.contact .row2 .col_2 p,
+.contact .row2 .col_3 p {
     font-size: 16px;
   }
 }
 @media (max-width: 370px) {
   .row2 .col2 .buttons .button2 {
     padding: 16px 14.5px;
-    margin-left: 0 !important;
+    margin-left: 0;
   }
   .row2 .col2 h1, .row2 .col2 .h1 {
     font-size: 37px;
