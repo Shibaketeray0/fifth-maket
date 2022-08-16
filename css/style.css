@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*little bit changed bootstrap grid*/
 /*!
  * Bootstrap  v5.2.0 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -10755,39 +10756,8 @@ col {
   padding: 0 15px;
 }
 
-html {
-  overflow-x: hidden;
-  height: 100%;
-}
-
-body {
-  height: 100%;
-  font-family: "Source Sans Pro", sans-serif;
-}
-
-body > * {
-  margin-top: -5px;
-}
-
-.wrapper {
-  overflow-x: hidden;
-  display: flex;
-  min-height: 100%;
-  flex-direction: column;
-}
-
-.col {
-  padding: 0;
-}
-
-.content {
-  flex: 1 1 auto;
-}
-
-iframe {
-  margin-top: -68px;
-}
-
+/*some variables for colors*/
+/*header (logo, navigation, banner below navigation*/
 .header_bg {
   width: 100%;
   max-height: 664px;
@@ -10967,6 +10937,7 @@ iframe {
   float: right;
 }
 
+/*block with features*/
 .features {
   border-bottom: none;
   max-height: 640px;
@@ -11013,7 +10984,7 @@ iframe {
 .features .second p,
 .features .third p,
 .features .fourth p {
-  color: #b4b4b4;
+  color: #999999;
   letter-spacing: 0.1px;
   margin-top: 6px;
   font-size: 18px;
@@ -11067,6 +11038,7 @@ iframe {
   margin: 0 auto;
 }
 
+/*block with title beautiful on every device*/
 .beautiful {
   margin-top: 126px;
 }
@@ -11103,7 +11075,7 @@ iframe {
   background: #008ed6;
 }
 .beautiful .row .col_beautiful .dummy_text {
-  color: #b4b4b4;
+  color: #999999;
   letter-spacing: 0.01px;
   margin-top: 20px;
   font-size: 18px;
@@ -11153,7 +11125,7 @@ iframe {
   margin-right: 8px;
 }
 
-/*block above slider*/
+/*block with title super easy to customize*/
 .super_easy {
   margin-top: 75px;
   width: 100%;
@@ -11189,7 +11161,7 @@ iframe {
   background: #008ed6;
 }
 .super_easy .col_beautiful .dummy_text {
-  color: #b4b4b4;
+  color: #999999;
   margin-top: 20px;
   font-size: 18px;
   font-weight: 600;
@@ -11202,7 +11174,7 @@ iframe {
   margin-bottom: 56px;
 }
 
-/*затемнення для фону слайдера*/
+/*slider*/
 .slider_tint {
   background-color: rgba(0, 0, 0, 0.8);
   padding-bottom: 31px;
@@ -11324,7 +11296,7 @@ iframe {
   font-size: 10px;
 }
 
-/*block under slider*/
+/*block with title like what you see and 2 buttons*/
 .like_what {
   padding: 56px 0 60px 0;
   background: #16151b;
@@ -11372,6 +11344,7 @@ iframe {
   background: #008ed6;
 }
 
+/*price cards*/
 .pricings {
   padding-top: 58px;
   text-align: center;
@@ -11469,7 +11442,7 @@ iframe {
   font-size: 19px;
   letter-spacing: 0.01px;
   word-spacing: 0.01px;
-  color: #a0a0a0;
+  color: #999999;
   padding: 46px 0 0 0;
   max-width: 210px;
   line-height: 27px;
@@ -11547,6 +11520,7 @@ iframe {
   display: none;
 }
 
+/*form and map*/
 .contact {
   z-index: 2;
   background: #ededed;
@@ -11702,6 +11676,7 @@ iframe {
   background: #008ed6;
 }
 
+/*footer*/
 .footer {
   text-align: center;
   margin-top: -7px;
@@ -11740,10 +11715,10 @@ iframe {
 .footer .col i {
   font-size: 19px;
   margin-top: 4px;
-  color: gray;
+  color: #999999;
 }
 .footer p {
-  color: gray;
+  color: #999999;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.1px;
@@ -11752,6 +11727,7 @@ iframe {
   margin-top: 22px;
 }
 
+/*media queries*/
 /*Медіа запроси*/
 @media (max-width: 1200px) {
   .features .container .row_icons {
@@ -12254,4 +12230,37 @@ iframe {
   .row2 .col2 h1, .row2 .col2 .h1 {
     font-size: 37px;
   }
+}
+/*little selectors no sense to make separate files for each*/
+html {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body > * {
+  margin-top: -5px;
+}
+
+.wrapper {
+  overflow-x: hidden;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+
+.col {
+  padding: 0;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+iframe {
+  margin-top: -68px;
 }
